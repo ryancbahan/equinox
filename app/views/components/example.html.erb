@@ -7,6 +7,9 @@
     <%= render partial: "shared/badge", locals: { text: "Success Badge" } %>
     <%= render partial: "shared/badge", locals: { text: "Warning Badge" } %>
   </div>
+  <!-- Combobox Example -->
+  <h2 class="text-xl font-semibold mt-4 mb-2">Combobox Example</h2>
+  <%= render "shared/combobox", options: ["Option 1", "Option 2", "Option 3"] %>
   <!-- Dropdown Example -->
   <h2 class="text-xl font-semibold mt-4 mb-2">Dropdown Example</h2>
   <%= render partial: "shared/dropdown", locals: { 
