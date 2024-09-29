@@ -1,0 +1,12 @@
+<div class="flex flex-col min-h-screen">
+  <!-- Navbar -->
+  <%= render 'shared/navbar' %>
+  <div class="flex flex-1">
+    <!-- Sidebar -->
+    <%= render 'shared/sidebar' %>
+    <!-- Main Content -->
+    <div class="flex-1 ml-64 pt-16 p-8">
+      <%= yield %>
+    </div>
+  </div>
+</div>
