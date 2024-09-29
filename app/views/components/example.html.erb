@@ -20,4 +20,24 @@
   <h2 class="text-xl font-semibold mt-4 mb-2">Banner Examples</h2>
   <%= render partial: "shared/banner", locals: { message: "Welcome to Equinox! This is your banner message.", dismissible: true } %>
   <%= render partial: "shared/banner", locals: { message: "This is a static banner.", dismissible: false } %>
+  <!-- Input Field Examples -->
+  <h2 class="text-xl font-semibold mt-4 mb-2">Input Field Examples</h2>
+  <div>
+    <%= render partial: "shared/input_field", locals: { 
+        label: "Username", 
+        type: "text", 
+        id: "username", 
+        name: "username", 
+        value: "" 
+      } 
+    %>
+    <%= render partial: "shared/input_field", locals: { 
+        label: "Email", 
+        type: "email", 
+        id: "email", 
+        name: "email", 
+        value: "" 
+      } 
+    %>
+  </div>
 <% end %>
