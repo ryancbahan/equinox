@@ -1,4 +1,7 @@
 :root {
+    --navbar-background: #14171A;
+    /* Define your navbar background color here */
+
     --color-primary: #1DA1F2;
     /* Primary Color */
     --color-secondary: #14171A;

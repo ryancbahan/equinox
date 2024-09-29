@@ -10,6 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        navbar: 'var(--navbar-background)',
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
         tertiary: 'var(--color-tertiary)',
