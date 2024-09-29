@@ -22,7 +22,7 @@
   <%= render partial: "shared/banner", locals: { message: "This is a static banner.", dismissible: false } %>
   <!-- Input Field, Checkbox, Radio Button, and Button Form -->
   <h2 class="text-xl font-semibold mt-4 mb-2">Form Examples</h2>
-  <%= form_with url: "/example", method: :post, builder: CustomFormBuilder, local: true do |form| %>
+  <%= form_with url: "/example", method: :post, local: true do |form| %>
     <!-- Input Fields -->
     <%= form.text_field :username, label: "Username" %>
     <%= form.email_field :email, label: "Email" %>
