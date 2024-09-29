@@ -8,14 +8,17 @@
         <li>
           <a href="<%= item[:url] %>" class="flex items-center px-4 py-2 text-neutral-default hover:bg-primary hover:text-white">
             <% if item[:icon] %>
-              <svg class="h-6 w-6 text-neutral-light" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<%= item[:icon] %>" />
-              </svg>
+              <%= render partial: "shared/icon", locals: { 
+                icon_name: item[:icon], 
+                size: "w-6 h-6", 
+                color: "text-primary",
+                additional_classes: "mr-3"
+              } %>
             <% end %>
-            <span class="ml-3"><%= item[:title] %></span>
-              </a>
-            </li>
-          <% end %>
-        </ul>
-      </nav>
-    </aside>
+            <span><%= item[:title] %></span>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+</aside>

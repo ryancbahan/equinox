@@ -1,3 +1,13 @@
+<%
+  # Set default values for size, additional_classes, and color
+  size = local_assigns.fetch(:size, 'w-6 h-6')
+  additional_classes = local_assigns.fetch(:additional_classes, '')
+  color = local_assigns.fetch(:color, 'text-primary')
+%>
 <div class="<%= size %> inline-block <%= additional_classes %>">
-  <%= image_tag "#{icon_name}.svg", class: "w-full h-full" %>
+  <%= inline_svg_tag "#{icon_name}.svg", 
+      class: "w-full h-full #{color}", 
+      aria: true, 
+      title: icon_name.titleize
+  %>
 </div>

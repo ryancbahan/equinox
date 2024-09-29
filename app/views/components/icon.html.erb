@@ -1,0 +1,15 @@
+<%= render "shared/page", title: "Icon Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Icon Examples</h2>
+  <!-- Default icon (uses text-primary color) -->
+  <h3 class="text-lg font-semibold mt-4">Default Icon (Primary Color)</h3>
+  <%= render partial: "shared/icon", locals: { icon_name: "arrow_down" } %>
+  <!-- Custom size icon -->
+  <h3 class="text-lg font-semibold mt-4">Custom Size Icon</h3>
+  <%= render partial: "shared/icon", locals: { icon_name: "arrow_down", size: "w-12 h-12" } %>
+  <!-- Icon with custom color -->
+  <h3 class="text-lg font-semibold mt-4">Icon with Custom Color</h3>
+  <%= render partial: "shared/icon", locals: { icon_name: "arrow_down", color: "text-secondary" } %>
+  <!-- Icon with additional classes -->
+  <h3 class="text-lg font-semibold mt-4">Icon with Additional Classes</h3>
+  <%= render partial: "shared/icon", locals: { icon_name: "arrow_down", additional_classes: "transform rotate-45" } %>
+<% end %>
