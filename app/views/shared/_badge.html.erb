@@ -1,3 +1,10 @@
-<span class="max-h-8 inline-flex items-center px-3 py-1 rounded-lg text-sm font-medium bg-blue-100 text-blue-800 leading-none">
+<% status_classes = {
+  success: "bg-success text-white border border-success",
+  warning: "bg-warning text-white border border-warning",
+  critical: "bg-critical text-white border border-critical",
+  info: "bg-info text-white border border-info",
+  neutral: "bg-neutral-default text-neutral-dark border border-neutral-default"
+} %>
+<span class="max-h-8 inline-flex items-center px-3 py-1 rounded-lg text-sm font-medium <%= status_classes[status] || status_classes[:neutral] %> leading-none">
   <%= text %>
 </span>

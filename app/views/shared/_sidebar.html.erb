@@ -1,4 +1,4 @@
-<aside data-scroll-preservation-target="sidebar" class="fixed w-64 h-[calc(100vh-4rem)] bg-gray-600 text-white mt-16 overflow-y-auto">
+<aside data-scroll-preservation-target="sidebar" class="fixed w-64 h-[calc(100vh-4rem)] bg-surface text-neutral-dark mt-16 overflow-y-auto">
   <div class="p-4">
     <h2 class="text-2xl font-semibold">Equinox</h2>
   </div>
@@ -6,9 +6,9 @@
     <ul class="space-y-2">
       <% items.each do |item| %>
         <li>
-          <a href="<%= item[:url] %>" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">
+          <a href="<%= item[:url] %>" class="flex items-center px-4 py-2 text-neutral-default hover:bg-primary hover:text-white">
             <% if item[:icon] %>
-              <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="h-6 w-6 text-neutral-light" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<%= item[:icon] %>" />
               </svg>
             <% end %>

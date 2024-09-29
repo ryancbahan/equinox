@@ -1,15 +1,60 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+:root {
+    --color-primary: #1DA1F2;
+    /* Primary Color */
+    --color-secondary: #14171A;
+    /* Secondary Color */
+    --color-tertiary: #FFAD1F;
+    /* Tertiary Color */
+    --color-success: #28A745;
+    /* Success Color */
+    --color-warning: #FFC107;
+    /* Warning Color */
+    --color-critical: #DC3545;
+    /* Critical Color */
+    --color-info: #17A2B8;
+    /* Info Color */
+    --color-neutral-light: #F8F9FA;
+    /* Light Neutral Color */
+    --color-neutral-default: #6C757D;
+    /* Default Neutral Color */
+    --color-neutral-dark: #343A40;
+    /* Dark Neutral Color */
+
+    --color-background: #F0F4F8;
+    /* Light background color for the app */
+    --color-surface: #FFFFFF;
+    /* White background for cards and surfaces */
+
+    --text-primary: #14171A;
+    /* Primary text color */
+    --text-secondary: #657786;
+    /* Secondary text color */
+    --text-tertiary: #AAB8C2;
+    /* Tertiary text color */
+    --text-success: #28A745;
+    /* Success text color */
+    --text-warning: #FFC107;
+    /* Warning text color */
+    --text-critical: #DC3545;
+    /* Critical text color */
+    --text-info: #17A2B8;
+    /* Info text color */
+    --text-neutral-light: #F8F9FA;
+    /* Light neutral text color */
+    --text-neutral-default: #6C757D;
+    /* Default neutral text color */
+    --text-neutral-dark: #343A40;
+    /* Dark neutral text color */
+
+    /* Border Colors */
+    --border-success: #28A745;
+    /* Success border color */
+    --border-warning: #FFC107;
+    /* Warning border color */
+    --border-critical: #DC3545;
+    /* Critical border color */
+    --border-info: #17A2B8;
+    /* Info border color */
+    --border-neutral: #6C757D;
+    /* Neutral border color */
+}

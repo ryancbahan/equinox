@@ -1,10 +1,10 @@
-<div class="container mx-auto px-4 py-6">
+<div class="container mx-auto px-4 py-6 bg-background">
   <!-- Page Heading -->
   <% if title.present? %>
-    <h1 class="text-3xl font-bold mb-6"><%= title %></h1>
+    <h1 class="text-3xl font-bold mb-6 text-neutral-dark"><%= title %></h1>
   <% end %>
   <!-- Page Content -->
-  <div class="page-content">
+  <div class="page-content text-neutral-default">
     <%= yield %>
   </div>
 </div>
