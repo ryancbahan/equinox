@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  root "components#example"
+  root "components#accordion"
   get 'components/badge', to: 'components#badge'
   get 'components/combobox', to: 'components#combobox'
   get 'components/accordion', to: 'components#accordion'
