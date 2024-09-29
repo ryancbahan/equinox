@@ -1,0 +1,16 @@
+<div class="empty-state bg-surface p-8 rounded-md shadow-md text-center">
+  <!-- Icon -->
+  <div class="icon mb-4">
+    <%= render partial: "shared/icon", locals: {icon_name: icon} %>
+  </div>
+  <!-- Title -->
+  <h2 class="text-2xl font-semibold text-primary mb-2">
+    <%= title %>
+  </h2>
+  <!-- Description -->
+  <p class="text-neutral-default mb-4">
+    <%= description %>
+  </p>
+  <!-- Action Button -->
+  <%= render partial: "shared/button", locals: { text: action_text, status: :primary, additional_classes: "" } %>
+</div>

@@ -72,6 +72,9 @@ class ComponentsController < ApplicationController
   def button
   end
 
+  def empty_state
+  end
+
   def radio_button
   end
   def typography

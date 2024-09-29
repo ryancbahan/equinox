@@ -1,19 +1,19 @@
 <%= render "shared/page", title: "Badge Component" do %>
-  <h2 class="text-xl font-semibold mb-4">Badge Examples</h2>
+  <h2>Badge Examples</h2>
   <!-- Default Badge Example -->
-  <h3 class="text-lg font-semibold mt-4">Default Badge</h3>
+  <h3>Default Badge</h3>
   <%= render partial: "shared/badge", locals: { text: "Default Badge", status: :neutral } %>
   <!-- Success Badge Example -->
-  <h3 class="text-lg font-semibold mt-4">Success Badge</h3>
+  <h3>Success Badge</h3>
   <%= render partial: "shared/badge", locals: { text: "Success Badge", status: :success } %>
   <!-- Warning Badge Example -->
-  <h3 class="text-lg font-semibold mt-4">Warning Badge</h3>
+  <h3>Warning Badge</h3>
   <%= render partial: "shared/badge", locals: { text: "Warning Badge", status: :warning } %>
   <!-- Critical Badge Example -->
-  <h3 class="text-lg font-semibold mt-4">Critical Badge</h3>
+  <h3>Critical Badge</h3>
   <%= render partial: "shared/badge", locals: { text: "Critical Badge", status: :critical } %>
   <!-- Info Badge Example -->
-  <h3 class="text-lg font-semibold mt-4">Info Badge</h3>
+  <h3>Info Badge</h3>
   <%= render partial: "shared/badge", locals: { text: "Info Badge", status: :info } %>
   <!-- Additional Badge Example -->
 <% end %>

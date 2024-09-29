@@ -1,0 +1,9 @@
+<%= render "shared/page", title: "Empty State Component" do %>
+  <h2>Empty state Examples</h2>
+  <%= render partial: "shared/empty_state", locals: {
+  icon: "sidebar_icon", 
+  title: "No Data Available", 
+  description: "You don't have any items yet. Add some to get started.", 
+  action_text: "Add Item"
+} %>
+<% end %>
