@@ -1,0 +1,15 @@
+<footer class="bg-surface p-6 text-center text-neutral-default shadow-inner">
+  <div class="container mx-auto">
+    <!-- Footer Content -->
+    <p class="text-primary text-sm mb-2">
+      &copy; <%= Time.now.year %> Equinox. All rights reserved.
+    </p>
+    <!-- Links Section -->
+    <nav class="space-x-4">
+      <%= link_to "Home", "root_path", class: "text-primary hover:text-secondary transition-colors" %>
+      <%= link_to "About Us", "about_path", class: "text-primary hover:text-secondary transition-colors" %>
+      <%= link_to "Contact", "contact_path", class: "text-primary hover:text-secondary transition-colors" %>
+      <%= link_to "Privacy Policy", "privacy_policy_path", class: "text-primary hover:text-secondary transition-colors" %>
+    </nav>
+  </div>
+</footer>

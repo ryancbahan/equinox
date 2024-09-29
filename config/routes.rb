@@ -27,7 +27,7 @@ Rails.application.routes.draw do
   get 'components/tabs', to: 'components#tabs'
   get 'components/typography', to: 'components#typography'
   get 'components/empty_state', to: 'components#empty_state'
-
+  get 'components/footer', to: 'components#footer'
   # Component routes
   get 'components/avatar', to: 'components#avatar'
   get 'components/checkbox', to: 'components#checkbox'
