@@ -9,4 +9,20 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   root "components#example"
+  get 'components/badge', to: 'components#badge'
+  get 'components/combobox', to: 'components#combobox'
+  get 'components/accordion', to: 'components#accordion'
+  get 'components/datepicker', to: 'components#datepicker'
+  get 'components/toast', to: 'components#toast'
+  get 'components/tooltip', to: 'components#tooltip'
+  get 'components/skeleton', to: 'components#skeleton'
+  get 'components/dropzone', to: 'components#dropzone'
+  get 'components/modal', to: 'components#modal'
+  get 'components/collapsible', to: 'components#collapsible'
+  get 'components/list', to: 'components#list'
+  get 'components/table', to: 'components#table'
+  get 'components/card', to: 'components#card'
+  get 'components/select', to: 'components#select'
+  get 'components/banner', to: 'components#banner'
+  get 'components/tabs', to: 'components#tabs'
 end

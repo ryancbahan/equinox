@@ -1,42 +1,21 @@
-<!-- app/views/shared/_sidebar.html.erb -->
-<aside class="fixed w-64 h-screen bg-gray-600 text-white mt-16">
+<aside class="fixed w-64 h-[calc(100vh-4rem)] bg-gray-600 text-white mt-16 overflow-y-auto">
   <div class="p-4">
     <h2 class="text-2xl font-semibold">Equinox</h2>
   </div>
   <nav class="mt-6">
     <ul class="space-y-2">
-      <li>
-        <a href="#" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">
-          <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h18M3 6h18m-7 12h7" />
-          </svg>
-          <span class="ml-3">Home</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">
-          <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h18m-9-6h9m-9 12h9" />
-          </svg>
-          <span class="ml-3">Components</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">
-          <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h18m-9-6h9m-9 12h9" />
-          </svg>
-          <span class="ml-3">About</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">
-          <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h18M3 6h18m-7 12h7" />
-          </svg>
-          <span class="ml-3">Contact</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</aside>
+      <% items.each do |item| %>
+        <li>
+          <a href="<%= item[:url] %>" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">
+            <% if item[:icon] %>
+              <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<%= item[:icon] %>" />
+              </svg>
+            <% end %>
+            <span class="ml-3"><%= item[:title] %></span>
+              </a>
+            </li>
+          <% end %>
+        </ul>
+      </nav>
+    </aside>

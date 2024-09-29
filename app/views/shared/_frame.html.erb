@@ -3,7 +3,25 @@
   <%= render 'shared/navbar' %>
   <div class="flex flex-1">
     <!-- Sidebar -->
-    <%= render 'shared/sidebar' %>
+    <%= render 'shared/sidebar', items: [
+      { title: "Home", url: "/", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Badge", url: "/components/badge", icon: "M3 12h18m-9-6h9m-9 12h9" },
+      { title: "Combobox", url: "/components/combobox", icon: "M3 12h18m-9-6h9m-9 12h9" },
+      { title: "Accordion", url: "/components/accordion", icon: "M3 12h18m-9-6h9m-9 12h9" },
+      { title: "Datepicker", url: "/components/datepicker", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Toast", url: "/components/toast", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Tooltip", url: "/components/tooltip", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Skeleton", url: "/components/skeleton", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Dropzone", url: "/components/dropzone", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Modal", url: "/components/modal", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Collapsible", url: "/components/collapsible", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "List", url: "/components/list", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Table", url: "/components/table", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Card", url: "/components/card", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Select", url: "/components/select", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Banner", url: "/components/banner", icon: "M3 12h18M3 6h18m-7 12h7" },
+      { title: "Tabs", url: "/components/tabs", icon: "M3 12h18M3 6h18m-7 12h7" }
+    ] %>
     <!-- Main Content -->
     <div class="flex-1 ml-64 pt-16 p-8">
       <%= yield %>
