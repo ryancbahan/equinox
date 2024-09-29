@@ -1,0 +1,15 @@
+<div class="mb-4 flex items-center">
+  <input 
+    type="radio" 
+    id="<%= id %>" 
+    name="<%= name %>" 
+    value="<%= value %>" 
+    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+    <% if checked %> checked <% end %> 
+  />
+  <% if label.present? %>
+    <label for="<%= id %>" class="ml-2 block text-sm font-medium text-gray-700">
+      <%= label %>
+    </label>
+  <% end %>
+</div>

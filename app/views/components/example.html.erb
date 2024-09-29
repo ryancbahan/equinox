@@ -40,4 +40,32 @@
       } 
     %>
   </div>
+  <!-- Checkbox and Radio Button Examples -->
+  <h2 class="text-xl font-semibold mt-4 mb-2">Checkbox and Radio Button Examples</h2>
+  <!-- Checkbox Example -->
+  <%= render partial: "shared/checkbox", locals: { 
+      label: "I agree to the terms", 
+      id: "terms", 
+      name: "terms", 
+      value: "agree", 
+      checked: false 
+    } 
+  %>
+  <!-- Radio Button Example -->
+  <%= render partial: "shared/radio_button", locals: { 
+      label: "Option 1", 
+      id: "option1", 
+      name: "options", 
+      value: "1", 
+      checked: true 
+    } 
+  %>
+  <%= render partial: "shared/radio_button", locals: { 
+      label: "Option 2", 
+      id: "option2", 
+      name: "options", 
+      value: "2", 
+      checked: false 
+    } 
+  %>
 <% end %>
