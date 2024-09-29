@@ -12,8 +12,13 @@
   <body class="bg-gray-100">
     <!-- Navbar Component -->
     <%= render 'shared/navbar' %>
-    <div class="container mx-auto px-4 py-6">
-      <%= yield %>
+    <div class="flex">
+      <!-- Sidebar Component -->
+      <%= render 'shared/sidebar' %>
+      <!-- Main Content -->
+      <div class="flex-1 ml-64 p-8">
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>
