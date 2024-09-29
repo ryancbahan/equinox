@@ -1,0 +1,27 @@
+<!-- app/views/shared/_datepicker.html.erb -->
+<div data-controller="datepicker" class="relative inline-block">
+  <input type="text" data-datepicker-target="input" class="border border-gray-300 p-2 rounded-md w-full focus:outline-none focus:ring focus:ring-blue-300 cursor-pointer" placeholder="Select date" readonly data-action="click->datepicker#toggleCalendar">
+  <!-- Calendar -->
+  <div class="absolute bg-white border border-gray-300 shadow-lg mt-2 p-4 rounded-md z-50 hidden w-64" data-datepicker-target="calendar">
+    <!-- Month and Year Navigation -->
+    <div class="flex justify-between items-center mb-4">
+      <button class="text-gray-500 hover:text-black transition duration-200" data-action="click->datepicker#prevMonth">&lt;</button>
+      <span class="font-semibold text-gray-800" data-datepicker-target="currentMonth"></span>
+      <button class="text-gray-500 hover:text-black transition duration-200" data-action="click->datepicker#nextMonth">&gt;</button>
+    </div>
+    <!-- Days of the Week -->
+    <div class="grid grid-cols-7 gap-2 text-center text-gray-500 font-medium">
+      <span>Su</span>
+      <span>Mo</span>
+      <span>Tu</span>
+      <span>We</span>
+      <span>Th</span>
+      <span>Fr</span>
+      <span>Sa</span>
+    </div>
+    <!-- Days of the Month -->
+    <div class="grid grid-cols-7 gap-2 text-center mt-4" data-datepicker-target="days">
+      <!-- Days will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
