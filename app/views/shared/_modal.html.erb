@@ -1,0 +1,18 @@
+<div data-controller="modal">
+  <!-- Button to trigger modal -->
+  <button class="bg-blue-500 text-white px-4 py-2 rounded" data-action="modal#open">
+    <%= button_text %>
+  </button>
+  <!-- Modal -->
+  <div data-modal-target="modal" class="fixed inset-0 hidden bg-gray-600 bg-opacity-75 flex justify-center items-center z-50">
+    <div class="bg-white p-6 rounded shadow-lg w-1/2 max-w-lg">
+      <!-- Modal Content -->
+      <h2 class="text-xl font-semibold mb-4"><%= title %></h2>
+      <p class="mb-6"><%= content %></p>
+      <!-- Close Button -->
+      <button class="bg-red-500 text-white px-4 py-2 rounded" data-action="modal#close">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
