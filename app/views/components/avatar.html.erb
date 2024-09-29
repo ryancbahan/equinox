@@ -1,21 +1,19 @@
 <%= render "shared/page", title: "Avatar Component" do %>
-  <h2 class="text-xl font-semibold mb-4">Avatar Examples</h2>
+  <h2>Avatar Examples</h2>
   <!-- Basic Avatar Example -->
-  <h3 class="text-lg font-semibold mt-4">Basic Avatar</h3>
+  <h3>Basic Avatar</h3>
   <%= render partial: "shared/avatar", locals: { 
     src: "https://via.placeholder.com/150", 
     alt: "Default Avatar", 
     size: "w-16 h-16" 
   } %>
-  <!-- Large Avatar Example -->
-  <h3 class="text-lg font-semibold mt-4">Large Avatar</h3>
+  <h3>Large Avatar</h3>
   <%= render partial: "shared/avatar", locals: { 
     src: "https://via.placeholder.com/300", 
     alt: "Large Avatar", 
     size: "w-32 h-32" 
   } %>
-  <!-- Small Avatar Example -->
-  <h3 class="text-lg font-semibold mt-4">Small Avatar</h3>
+  <h3>Small Avatar</h3>
   <%= render partial: "shared/avatar", locals: { 
     src: "https://via.placeholder.com/50", 
     alt: "Small Avatar", 
