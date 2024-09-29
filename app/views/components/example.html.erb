@@ -7,6 +7,12 @@
     <%= render partial: "shared/badge", locals: { text: "Success Badge" } %>
     <%= render partial: "shared/badge", locals: { text: "Warning Badge" } %>
   </div>
+  <!-- Avatar Examples -->
+  <h2 class="text-xl font-semibold mt-4 mb-2">Avatar Examples</h2>
+  <div class="flex space-x-4">
+    <%= render partial: "shared/avatar", locals: { src: "https://via.placeholder.com/150", alt: "Default Avatar", size: "w-16 h-16" } %>
+    <%= render partial: "shared/avatar", locals: { src: "https://via.placeholder.com/100", alt: "Small Avatar", size: "w-8 h-8" } %>
+  </div>
   <!-- Card Examples -->
   <h2 class="text-xl font-semibold mt-4 mb-2">Card Examples</h2>
   <div class="space-y-4">
