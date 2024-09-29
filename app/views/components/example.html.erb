@@ -17,6 +17,9 @@
       { text: "Option 3", url: "#" }
     ] 
   } %>
+  <!-- Toast Example -->
+  <h2 class="text-xl font-semibold mt-4 mb-2">Toast Example</h2>
+  <%= render partial: "shared/toast", locals: { button_text: "Show Toast", message: "This is a toast notification!" } %>
   <!-- Tooltip Example -->
   <h2 class="text-xl font-semibold mt-4 mb-2">Tooltip Example</h2>
   <%= render partial: "shared/tooltip", locals: { target_text: "Hover over me", tooltip_text: "This is a tooltip!" } %>
