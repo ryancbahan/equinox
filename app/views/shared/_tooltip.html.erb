@@ -1,0 +1,10 @@
+<div data-controller="tooltip" class="relative inline-block">
+  <!-- Target Element (e.g., button or text) -->
+  <div class="cursor-pointer" data-action="mouseover->tooltip#show mouseout->tooltip#hide focus->tooltip#show blur->tooltip#hide">
+    <%= target_text %>
+  </div>
+  <!-- Tooltip -->
+  <div data-tooltip-target="tooltip" class="hidden absolute bg-gray-800 text-white text-sm rounded p-2 mt-2 z-10">
+    <%= tooltip_text %>
+  </div>
+</div>
