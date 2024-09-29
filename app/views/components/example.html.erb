@@ -7,6 +7,9 @@
     <%= render partial: "shared/badge", locals: { text: "Success Badge" } %>
     <%= render partial: "shared/badge", locals: { text: "Warning Badge" } %>
   </div>
+  <!-- Collapsible Example -->
+  <h2 class="text-xl font-semibold mt-4 mb-2">Collapsible Example</h2>
+  <%= render partial: "shared/collapsible", locals: { button_text: "Toggle Content", title: "Collapsible Section", content: "This is the collapsible content. It can be toggled by clicking the button." } %>
   <!-- Modal Example -->
   <h2 class="text-xl font-semibold mt-4 mb-2">Modal Example</h2>
   <%= render partial: "shared/modal", locals: { button_text: "Open Modal", title: "Modal Title", content: "This is the content of the modal." } %>

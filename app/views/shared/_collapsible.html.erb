@@ -1,0 +1,12 @@
+<!-- app/views/shared/_collapsible.html.erb -->
+<div data-controller="collapsible">
+  <!-- Button to trigger collapse -->
+  <button class="bg-blue-500 text-white px-4 py-2 rounded" data-action="collapsible#toggle">
+    <%= button_text %>
+  </button>
+  <!-- Collapsible Content -->
+  <div data-collapsible-target="content" class="hidden mt-4 bg-gray-100 p-4 rounded shadow">
+    <h2 class="text-lg font-semibold mb-2"><%= title %></h2>
+    <p><%= content %></p>
+  </div>
+</div>
