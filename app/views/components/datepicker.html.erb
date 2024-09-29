@@ -1,0 +1,24 @@
+<%= render "shared/page", title: "Datepicker Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Datepicker Examples</h2>
+  <!-- Basic Datepicker Example -->
+  <h3 class="text-lg font-semibold mt-4">Basic Datepicker</h3>
+  <div class="mb-4">
+    <%= render partial: "shared/datepicker", locals: { input_name: "birthdate", selected_value: "" } %>
+  </div>
+  <!-- Datepicker with Predefined Date -->
+  <h3 class="text-lg font-semibold mt-4">Datepicker with Predefined Date</h3>
+  <div class="mb-4">
+    <%= render partial: "shared/datepicker", locals: { input_name: "event_date", selected_value: "2024-09-30" } %>
+  </div>
+  <!-- Datepicker with Custom Styling -->
+  <h3 class="text-lg font-semibold mt-4">Custom Styled Datepicker</h3>
+  <div class="mb-4">
+    <%= render partial: "shared/datepicker", locals: { input_name: "custom_date", selected_value: "", additional_classes: "bg-gray-100 border border-gray-400" } %>
+  </div>
+  <!-- Datepicker Example with Instructions -->
+  <h3 class="text-lg font-semibold mt-4">Datepicker with Instructions</h3>
+  <div class="mb-4">
+    <p>Please select a date:</p>
+    <%= render partial: "shared/datepicker", locals: { input_name: "instruction_date", selected_value: "" } %>
+  </div>
+<% end %>

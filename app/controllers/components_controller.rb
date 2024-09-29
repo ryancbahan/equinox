@@ -49,4 +49,31 @@ class ComponentsController < ApplicationController
 
   def tabs
   end
+
+  def avatar
+  end
+
+  def checkbox
+  end
+
+  def codeblock
+  end
+
+  def dropdown
+  end
+
+  def icon
+  end
+
+  def input_field
+  end
+
+  def page
+  end
+  
+  def button
+  end
+
+  def radio_button
+  end
 end

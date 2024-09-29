@@ -1,0 +1,22 @@
+<%= render "shared/page", title: "Combobox Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Combobox Examples</h2>
+  <!-- Basic Combobox Example -->
+  <h3 class="text-lg font-semibold mt-4">Basic Combobox</h3>
+  <div class="mb-4">
+    <%= render partial: "shared/combobox", locals: { options: ["Option 1", "Option 2", "Option 3"] } %>
+  </div>
+  <!-- Combobox with Custom Options -->
+  <h3 class="text-lg font-semibold mt-4">Combobox with Custom Options</h3>
+  <div class="mb-4">
+    <%= render partial: "shared/combobox", locals: { options: ["Custom Option 1", "Custom Option 2", "Custom Option 3"] } %>
+  </div>
+  <!-- Combobox Example with Additional Features -->
+  <h3 class="text-lg font-semibold mt-4">Advanced Combobox</h3>
+  <div class="mb-4">
+    <%= render partial: "shared/combobox", locals: { options: ["Advanced Option 1", "Advanced Option 2", "Advanced Option 3"] } %>
+  </div>
+  <h3 class="text-lg font-semibold mt-4">Combobox with Search Functionality</h3>
+  <div class="mb-4">
+    <%= render partial: "shared/combobox", locals: { options: ["Searchable Option 1", "Searchable Option 2", "Searchable Option 3"] } %>
+  </div>
+<% end %>

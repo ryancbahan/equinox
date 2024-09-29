@@ -1,0 +1,12 @@
+<%= render "shared/page", title: "Banner Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Banner Examples</h2>
+  <!-- Static Banner Example -->
+  <h3 class="text-lg font-semibold mt-4">Static Banner</h3>
+  <%= render partial: "shared/banner", locals: { message: "This is a static banner.", dismissible: false } %>
+  <!-- Dismissible Banner Example -->
+  <h3 class="text-lg font-semibold mt-4">Dismissible Banner</h3>
+  <%= render partial: "shared/banner", locals: { message: "Welcome to Equinox! This is your banner message.", dismissible: true } %>
+  <!-- Custom Styled Banner Example -->
+  <h3 class="text-lg font-semibold mt-4">Custom Styled Banner</h3>
+  <%= render partial: "shared/banner", locals: { message: "This banner has custom styling!", dismissible: false, additional_classes: "bg-blue-500 text-white" } %>
+<% end %>

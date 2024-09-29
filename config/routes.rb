@@ -25,4 +25,16 @@ Rails.application.routes.draw do
   get 'components/select', to: 'components#select'
   get 'components/banner', to: 'components#banner'
   get 'components/tabs', to: 'components#tabs'
+
+  # Component routes
+  get 'components/avatar', to: 'components#avatar'
+  get 'components/checkbox', to: 'components#checkbox'
+  get 'components/codeblock', to: 'components#codeblock'
+  get 'components/dropdown', to: 'components#dropdown'
+  get 'components/icon', to: 'components#icon'
+  get 'components/input_field', to: 'components#input_field'
+  get 'components/page', to: 'components#page'
+  get 'components/radio_button', to: 'components#radio_button'
+  get 'components/button', to: 'components#button'
+
 end

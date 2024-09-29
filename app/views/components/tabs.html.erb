@@ -1,0 +1,21 @@
+<%= render "shared/page", title: "Tabs Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Tabs Examples</h2>
+  <!-- Basic Tabs Example -->
+  <h3 class="text-lg font-semibold mt-4">Basic Tabs</h3>
+  <%= render partial: "shared/tabs", locals: {
+    tabs: [
+      { title: "Tab 1", content: "<h3 class='text-lg font-semibold'>Welcome to Tab 1</h3><p>This is some content inside the first tab.</p>" },
+      { title: "Tab 2", content: "<h3 class='text-lg font-semibold'>Details for Tab 2</h3><p>This tab has different content.</p>" },
+      { title: "Tab 3", content: "<h3 class='text-lg font-semibold'>Form in Tab 3</h3><form><label for='name' class='block text-sm font-medium text-gray-700'>Name</label><input type='text' id='name' name='name' class='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md' /></form>" }
+    ]
+  } %>
+  <!-- Tabs with Custom Content -->
+  <h3 class="text-lg font-semibold mt-4">Custom Content Tabs</h3>
+  <%= render partial: "shared/tabs", locals: {
+    tabs: [
+      { title: "Overview", content: "<p>This tab contains an overview of the application.</p>" },
+      { title: "Features", content: "<ul class='list-disc pl-5'><li>Feature 1</li><li>Feature 2</li></ul>" },
+      { title: "Contact", content: "<p>Contact us at: <a href='mailto:info@example.com'>info@example.com</a></p>" }
+    ]
+  } %>
+<% end %>

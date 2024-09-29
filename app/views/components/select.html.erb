@@ -1,0 +1,23 @@
+<%= render "shared/page", title: "Select Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Select Examples</h2>
+  <!-- Basic Select Example -->
+  <h3 class="text-lg font-semibold mt-4">Basic Select</h3>
+  <div class="mb-4">
+    <%= render partial: "shared/select", locals: { label: "Choose an Option", options: ["Option 1", "Option 2", "Option 3"] } %>
+  </div>
+  <!-- Select with Placeholder -->
+  <h3 class="text-lg font-semibold mt-4">Select with Placeholder</h3>
+  <div class="mb-4">
+    <%= render partial: "shared/select", locals: { label: "Select an Item", options: ["Item 1", "Item 2", "Item 3"], placeholder: "Select an item..." } %>
+  </div>
+  <!-- Multiple Select Example -->
+  <h3 class="text-lg font-semibold mt-4">Multiple Select</h3>
+  <div class="mb-4">
+    <%= render partial: "shared/select", locals: { label: "Select Multiple Options", options: ["Option A", "Option B", "Option C"], multiple: true } %>
+  </div>
+  <!-- Custom Styled Select Example -->
+  <h3 class="text-lg font-semibold mt-4">Custom Styled Select</h3>
+  <div class="mb-4">
+    <%= render partial: "shared/select", locals: { label: "Custom Select", options: ["Custom 1", "Custom 2", "Custom 3"], additional_classes: "bg-gray-200" } %>
+  </div>
+<% end %>

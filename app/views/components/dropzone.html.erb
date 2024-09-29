@@ -1,0 +1,24 @@
+<%= render "shared/page", title: "Dropzone Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Dropzone Examples</h2>
+  <!-- Basic Dropzone Example -->
+  <h3 class="text-lg font-semibold mt-4">Basic Dropzone</h3>
+  <div class="border-dashed border-2 border-gray-400 p-4 mb-4">
+    <%= render partial: "shared/dropzone", locals: { message: "Drag and drop your files here, or click to upload.", multiple: true } %>
+  </div>
+  <!-- Dropzone with Instructions -->
+  <h3 class="text-lg font-semibold mt-4">Dropzone with Instructions</h3>
+  <div class="border-dashed border-2 border-gray-400 p-4 mb-4">
+    <%= render partial: "shared/dropzone", locals: { message: "You can upload multiple files. Drag and drop or click to upload.", multiple: true } %>
+  </div>
+  <!-- Dropzone with Custom Styling -->
+  <h3 class="text-lg font-semibold mt-4">Custom Styled Dropzone</h3>
+  <div class="border-dashed border-2 border-blue-500 bg-blue-100 p-4 mb-4">
+    <%= render partial: "shared/dropzone", locals: { message: "Custom styled dropzone. Drag and drop files!", multiple: true } %>
+  </div>
+  <!-- Dropzone Example with File Name Display -->
+  <h3 class="text-lg font-semibold mt-4">Dropzone with File Name Display</h3>
+  <div class="border-dashed border-2 border-gray-400 p-4 mb-4" data-controller="dropzone">
+    <%= render partial: "shared/dropzone", locals: { message: "Files will be displayed here once uploaded.", multiple: true } %>
+    <div data-dropzone-target="fileNameList"></div>
+  </div>
+<% end %>

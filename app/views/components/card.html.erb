@@ -1,0 +1,15 @@
+<%= render "shared/page", title: "Card Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Card Examples</h2>
+  <!-- Basic Card Example -->
+  <h3 class="text-lg font-semibold mt-4">Basic Card</h3>
+  <%= render partial: "shared/card", locals: { title: "Basic Card Title", description: "This is a simple card description." } %>
+  <!-- Featured Card Example -->
+  <h3 class="text-lg font-semibold mt-4">Featured Card</h3>
+  <%= render partial: "shared/card", locals: { title: "Featured Card", description: "This card contains a badge component.", badge_text: "Featured" } %>
+  <!-- Another Card Example -->
+  <h3 class="text-lg font-semibold mt-4">Another Card</h3>
+  <%= render partial: "shared/card", locals: { title: "Another Card", description: "This card does not have a badge." } %>
+  <!-- Custom Styled Card Example -->
+  <h3 class="text-lg font-semibold mt-4">Custom Styled Card</h3>
+  <%= render partial: "shared/card", locals: { title: "Custom Card", description: "This card has custom styling.", badge_text: "New", additional_classes: "bg-blue-500 text-white" } %>
+<% end %>

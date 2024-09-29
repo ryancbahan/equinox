@@ -1,0 +1,24 @@
+<%= render "shared/page", title: "List Component" do %>
+  <h2 class="text-xl font-semibold mb-4">List Examples</h2>
+  <!-- Unordered List Example -->
+  <h3 class="text-lg font-semibold mt-4">Unordered List</h3>
+  <%= render partial: "shared/list", locals: { 
+    list_type: 'ul', 
+    items: [['Item 1', 'Description for Item 1'], ['Item 2', 'Description for Item 2'], ['Item 3', 'Description for Item 3']], 
+    additional_classes: 'bg-gray-100 p-4' 
+  } %>
+  <!-- Ordered List Example -->
+  <h3 class="text-lg font-semibold mt-4">Ordered List</h3>
+  <%= render partial: "shared/list", locals: { 
+    list_type: 'ol', 
+    items: [['First', 'First item description'], ['Second', 'Second item description'], ['Third', 'Third item description']], 
+    additional_classes: 'bg-gray-100 p-4' 
+  } %>
+  <!-- Styled List Example -->
+  <h3 class="text-lg font-semibold mt-4">Styled List</h3>
+  <%= render partial: "shared/list", locals: { 
+    list_type: 'ul', 
+    items: [['Styled Item 1', 'Styled description 1'], ['Styled Item 2', 'Styled description 2']], 
+    additional_classes: 'bg-blue-100 p-4' 
+  } %>
+<% end %>

@@ -1,0 +1,15 @@
+<%= render "shared/page", title: "Badge Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Badge Examples</h2>
+  <!-- Default Badge Example -->
+  <h3 class="text-lg font-semibold mt-4">Default Badge</h3>
+  <%= render partial: "shared/badge", locals: { text: "Default Badge" } %>
+  <!-- Success Badge Example -->
+  <h3 class="text-lg font-semibold mt-4">Success Badge</h3>
+  <%= render partial: "shared/badge", locals: { text: "Success Badge" } %>
+  <!-- Warning Badge Example -->
+  <h3 class="text-lg font-semibold mt-4">Warning Badge</h3>
+  <%= render partial: "shared/badge", locals: { text: "Warning Badge" } %>
+  <!-- Additional Badge Examples -->
+  <h3 class="text-lg font-semibold mt-4">Custom Badge</h3>
+  <%= render partial: "shared/badge", locals: { text: "Custom Badge", additional_classes: "bg-blue-500 text-white" } %>
+<% end %>
