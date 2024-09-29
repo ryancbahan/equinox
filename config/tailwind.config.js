@@ -60,5 +60,12 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/container-queries'),
-  ]
+  ],
+  variants: {
+    extend: {
+      backgroundColor: ['checked', 'focus'],
+      borderColor: ['checked', 'focus'],
+      ring: ['focus'],
+    }
+  }
 }
