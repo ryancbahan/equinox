@@ -7,18 +7,25 @@
     <%= render partial: "shared/badge", locals: { text: "Success Badge" } %>
     <%= render partial: "shared/badge", locals: { text: "Warning Badge" } %>
   </div>
-  <!-- Avatar Examples -->
-  <h2 class="text-xl font-semibold mt-4 mb-2">Avatar Examples</h2>
-  <div class="flex space-x-4">
-    <%= render partial: "shared/avatar", locals: { src: "https://via.placeholder.com/150", alt: "Default Avatar", size: "w-16 h-16" } %>
-    <%= render partial: "shared/avatar", locals: { src: "https://via.placeholder.com/100", alt: "Small Avatar", size: "w-8 h-8" } %>
-  </div>
-  <!-- Icon Examples -->
-  <h2 class="text-xl font-semibold mt-4 mb-2">Icon Examples</h2>
-  <div class="flex space-x-4">
-    <!-- Use the arrow_down.svg icon -->
-    <%= render partial: "shared/icon", locals: { icon_name: "arrow_down", size: "w-6 h-6", additional_classes: "text-gray-500" } %>
-  </div>
+  <!-- Unordered List Example Styled Like a Table -->
+  <%= render partial: "shared/list", locals: { 
+  list_type: 'ul', 
+  items: [['Item 1', 'Description 1'], ['Item 2', 'Description 2'], ['Item 3', 'Description 3']], 
+  additional_classes: '' 
+} %>
+  <!-- Ordered List Example Styled Like a Table -->
+  <%= render partial: "shared/list", locals: { 
+  list_type: 'ol', 
+  items: [['First', 'First Desc'], ['Second', 'Second Desc'], ['Third', 'Third Desc']], 
+  additional_classes: '' 
+} %>
+  <!-- Table Examples -->
+  <h2 class="text-xl font-semibold mt-4 mb-2">Table Examples</h2>
+  <%= render partial: "shared/table", locals: { 
+    headers: ['Name', 'Age', 'City'], 
+    rows: [['John', '30', 'New York'], ['Jane', '25', 'San Francisco'], ['Bob', '35', 'Chicago']],
+    additional_classes: '' 
+  } %>
   <!-- Card Examples -->
   <h2 class="text-xl font-semibold mt-4 mb-2">Card Examples</h2>
   <div class="space-y-4">
