@@ -19,7 +19,7 @@
   } %>
   <!-- Datepicker Example -->
   <h2 class="text-xl font-semibold mt-4 mb-2">Datepicker Example</h2>
-  <%= render "shared/datepicker" %>
+  <%= render "shared/datepicker", input_name: "birthdate", selected_value: "2024-09-01" %>
   <!-- Code Block Example -->
   <h2 class="text-xl font-semibold mt-4 mb-2">Code Block Example</h2>
   <%= render partial: "shared/codeblock", locals: { code: "<div>Hello, world!</div>" } %>
@@ -90,6 +90,7 @@
     <%= form.email_field :email, label: "Email" %>
     <!-- Checkbox -->
     <%= form.check_box :terms, label: "I agree to the terms" %>
+    <%= form.datepicker_field :birthdate %>
     <!-- Radio Buttons -->
     <%= form.radio_button :option, "1", label: "Option 1" %>
     <%= form.radio_button :option, "2", label: "Option 2" %>

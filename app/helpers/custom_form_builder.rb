@@ -18,6 +18,14 @@ class CustomFormBuilder < ActionView::Helpers::FormBuilder
     }
   end
 
+  def datepicker_field(method, options = {})
+  @template.render partial: "shared/datepicker", locals: { 
+    input_name: "#{object_name}[#{method}]",
+    selected_value: object_value(method) || ""
+  }
+  end
+
+
   def radio_button(method, tag_value, options = {})
     @template.render partial: 'shared/radio_button', locals: {
       label: options[:label],
