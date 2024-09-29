@@ -2,8 +2,9 @@
 <h1 class="text-2xl font-bold mb-4">Component Examples</h1>
 <h2 class="text-xl font-semibold mb-2">Badge Examples</h2>
 <!-- Default badge -->
-<%= render partial: "shared/badge", locals: { text: "Default Badge" } %>
-<!-- Success badge -->
-<%= render partial: "shared/badge", locals: { text: "Success Badge" } %>
-<!-- Warning badge -->
-<%= render partial: "shared/badge", locals: { text: "Warning Badge" } %>
+<%= render partial: "shared/badge", locals: { text: "Default Badge", description: nil } %>
+<h2 class="text-xl font-semibold mt-4 mb-2">Card Examples</h2>
+<!-- Card with badge -->
+<%= render partial: "shared/card", locals: { title: "Card Title", description: "This card contains a badge component.", badge_text: "Featured" } %>
+<!-- Card without badge -->
+<%= render partial: "shared/card", locals: { title: "Another Card", description: "This card does not have a badge.", badge_text: nil } %>
