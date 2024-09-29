@@ -1,0 +1,18 @@
+<%= render "shared/page", title: "Button Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Button Examples</h2>
+  <!-- Default Button Example -->
+  <h3 class="text-lg font-semibold mt-4">Default Button</h3>
+  <%= render partial: "shared/button", locals: { text: "Default Button", additional_classes: "bg-blue-500 text-white", disabled: false } %>
+  <!-- Success Button Example -->
+  <h3 class="text-lg font-semibold mt-4">Success Button</h3>
+  <%= render partial: "shared/button", locals: { text: "Success Button", additional_classes: "bg-green-500 text-white", disabled: false } %>
+  <!-- Danger Button Example -->
+  <h3 class="text-lg font-semibold mt-4">Danger Button</h3>
+  <%= render partial: "shared/button", locals: { text: "Danger Button", additional_classes: "bg-red-500 text-white", disabled: false } %>
+  <!-- Outline Button Example -->
+  <h3 class="text-lg font-semibold mt-4">Outline Button</h3>
+  <%= render partial: "shared/button", locals: { text: "Outline Button", additional_classes: "border border-blue-500 text-blue-500", disabled: false } %>
+  <!-- Disabled Button Example -->
+  <h3 class="text-lg font-semibold mt-4">Disabled Button</h3>
+  <%= render partial: "shared/button", locals: { text: "Disabled Button", additional_classes: "bg-gray-300 text-gray-500", disabled: true } %>
+<% end %>

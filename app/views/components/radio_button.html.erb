@@ -1,0 +1,18 @@
+<%= render "shared/page", title: "Radio Button Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Radio Button Examples</h2>
+  <!-- Default Radio Button Example -->
+  <h3 class="text-lg font-semibold mt-4">Default Radio Button</h3>
+  <%= render partial: "shared/radio_button", locals: { label: "Option 1", id: "option1", name: "options", value: "1", checked: false } %>
+  <%= render partial: "shared/radio_button", locals: { label: "Option 2", id: "option2", name: "options", value: "2", checked: false } %>
+  <%= render partial: "shared/radio_button", locals: { label: "Option 3", id: "option3", name: "options", value: "3", checked: false } %>
+  <!-- Checked Radio Button Example -->
+  <h3 class="text-lg font-semibold mt-4">Checked Radio Button</h3>
+  <%= render partial: "shared/radio_button", locals: { label: "Option 1", id: "option1_checked", name: "options", value: "1", checked: true } %>
+  <%= render partial: "shared/radio_button", locals: { label: "Option 2", id: "option2_checked", name: "options", value: "2", checked: false } %>
+  <!-- Disabled Radio Button Example -->
+  <h3 class="text-lg font-semibold mt-4">Disabled Radio Button</h3>
+  <div class="flex items-center">
+    <%= radio_button_tag "disabled_option", "1", false, id: "disabled_option", disabled: true, class: "mr-2" %>
+    <label for="disabled_option" class="text-gray-500 line-through">Disabled Option</label>
+  </div>
+<% end %>

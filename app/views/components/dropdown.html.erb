@@ -1,0 +1,17 @@
+<%= render "shared/page", title: "Dropdown Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Dropdown Examples</h2>
+  <!-- Default Dropdown Example -->
+  <h3 class="text-lg font-semibold mt-4">Default Dropdown</h3>
+  <%= render partial: "shared/dropdown", locals: { button_text: "Select Option", options: [
+    { text: "Option 1", url: "#" },
+    { text: "Option 2", url: "#" },
+    { text: "Option 3", url: "#" }
+  ] } %>
+  <!-- Another Dropdown Example -->
+  <h3 class="text-lg font-semibold mt-4">Another Dropdown</h3>
+  <%= render partial: "shared/dropdown", locals: { button_text: "Choose an Action", options: [
+    { text: "Action 1", url: "#" },
+    { text: "Action 2", url: "#" },
+    { text: "Action 3", url: "#" }
+  ] } %>
+<% end %>

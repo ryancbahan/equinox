@@ -1,0 +1,45 @@
+<%= render "shared/page", title: "Input Field Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Input Field Examples</h2>
+  <!-- Text Field Example -->
+  <h3 class="text-lg font-semibold mt-4">Text Input</h3>
+  <%= render partial: "shared/input_field", locals: { 
+      label: "Username", 
+      type: "text", 
+      id: "username", 
+      name: "username", 
+      value: "", 
+      placeholder: "Enter your username",
+      error_message: nil 
+    } 
+  %>
+  <!-- Email Field Example -->
+  <h3 class="text-lg font-semibold mt-4">Email Input</h3>
+  <%= render partial: "shared/input_field", locals: { 
+      label: "Email", 
+      type: "email", 
+      id: "email", 
+      name: "email", 
+      value: "", 
+      placeholder: "Enter your email",
+      error_message: nil 
+    } 
+  %>
+  <!-- Password Field Example -->
+  <h3 class="text-lg font-semibold mt-4">Password Input</h3>
+  <%= render partial: "shared/input_field", locals: { 
+      label: "Password", 
+      type: "password", 
+      id: "password", 
+      name: "password", 
+      value: "", 
+      placeholder: "Enter your password",
+      error_message: nil 
+    } 
+  %>
+  <!-- Text Area Example -->
+  <h3 class="text-lg font-semibold mt-4">Text Area</h3>
+  <div class="mb-4">
+    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+    <textarea id="message" name="message" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500" placeholder="Write your message here..."></textarea>
+  </div>
+<% end %>

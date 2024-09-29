@@ -1,7 +1,7 @@
 <div class="flex flex-col min-h-screen">
   <!-- Navbar -->
   <%= render 'shared/navbar' %>
-  <div class="flex flex-1">
+  <div class="flex flex-1" data-controller="sidebar">
     <!-- Sidebar -->
     <%= render 'shared/sidebar', items: [
       { title: "Accordion", url: "/components/accordion", icon: "M3 12h18m-9-6h9m-9 12h9" },
@@ -18,7 +18,7 @@
       { title: "Dropdown", url: "/components/dropdown", icon: "M3 12h18m-9-6h9m-9 12h9" },
       { title: "Dropzone", url: "/components/dropzone", icon: "M3 12h18M3 6h18m-7 12h7" },
       { title: "Home", url: "/", icon: "M3 12h18M3 6h18m-7 12h7" },
-      { title: "Input", url: "/components/input", icon: "M3 12h18m-9-6h9m-9 12h9" },
+      { title: "Input", url: "/components/input_field", icon: "M3 12h18m-9-6h9m-9 12h9" },
       { title: "List", url: "/components/list", icon: "M3 12h18M3 6h18m-7 12h7" },
       { title: "Modal", url: "/components/modal", icon: "M3 12h18M3 6h18m-7 12h7" },
       { title: "Page", url: "/components/page", icon: "M3 12h18M3 6h18m-7 12h7" },

@@ -1,0 +1,15 @@
+<%= render "shared/page", title: "Checkbox Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Checkbox Examples</h2>
+  <!-- Default Checkbox Example -->
+  <h3 class="text-lg font-semibold mt-4">Default Checkbox</h3>
+  <%= render partial: "shared/checkbox", locals: { label: "Accept Terms", id: "terms", name: "terms", value: "1", checked: false } %>
+  <!-- Checked Checkbox Example -->
+  <h3 class="text-lg font-semibold mt-4">Checked Checkbox</h3>
+  <%= render partial: "shared/checkbox", locals: { label: "Subscribe to Newsletter", id: "newsletter", name: "newsletter", value: "1", checked: true } %>
+  <!-- Disabled Checkbox Example -->
+  <h3 class="text-lg font-semibold mt-4">Disabled Checkbox</h3>
+  <div class="flex items-center">
+    <%= check_box_tag "disabled_checkbox", "1", false, id: "disabled_checkbox", disabled: true, class: "mr-2" %>
+    <label for="disabled_checkbox" class="text-gray-500 line-through">Disabled Checkbox</label>
+  </div>
+<% end %>
