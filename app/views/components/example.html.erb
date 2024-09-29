@@ -26,6 +26,9 @@
       { title: "Tab 3", content: "<h3 class='text-lg font-semibold'>Form in Tab 3</h3><form><label for='name' class='block text-sm font-medium text-gray-700'>Name</label><input type='text' id='name' name='name' class='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md' /></form>" }
     ]
   } %>
+  <!-- Skeleton Loading Example -->
+  <h2 class="text-xl font-semibold mt-4 mb-2">Skeleton Loading Example</h2>
+  <%= render "shared/skeleton" %>
   <!-- Toast Example -->
   <h2 class="text-xl font-semibold mt-4 mb-2">Toast Example</h2>
   <%= render partial: "shared/toast", locals: { button_text: "Show Toast", message: "This is a toast notification!" } %>
