@@ -1,0 +1,14 @@
+<div data-controller="dropdown" class="relative inline-block text-left">
+  <!-- Button to trigger dropdown -->
+  <button class="bg-blue-500 text-white px-4 py-2 rounded" data-action="dropdown#toggle">
+    <%= button_text %>
+  </button>
+  <!-- Dropdown Menu -->
+  <div data-dropdown-target="menu" class="hidden absolute mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg">
+    <% options.each do |option| %>
+      <a href="<%= option[:url] %>" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">
+        <%= option[:text] %>
+      </a>
+    <% end %>
+  </div>
+</div>
