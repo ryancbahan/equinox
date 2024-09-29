@@ -1,10 +1,10 @@
 <div>
-  <label for="options" class="block text-sm font-medium text-gray-700 mb-1">
+  <label for="options" class="block text-sm font-medium text-neutral-default mb-1">
     <%= label %>
   </label>
-  <select id="options" name="options" class="block w-full px-3 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+  <select id="options" name="options" class="block w-full px-3 py-2 border border-neutral-default bg-surface rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary sm:text-sm">
     <% options.each do |option| %>
-      <option value="<%= option %>"><%= option %></option>
+      <option value="<%= option %>" class="bg-surface text-neutral-dark"><%= option %></option>
     <% end %>
   </select>
 </div>

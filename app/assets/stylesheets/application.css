@@ -1,6 +1,6 @@
 :root {
     --navbar-background: #14171A;
-    /* Define your navbar background color here */
+    /* Light Mode Navbar Background */
 
     --color-primary: #1DA1F2;
     /* Primary Color */
@@ -60,4 +60,83 @@
     /* Info border color */
     --border-neutral: #6C757D;
     /* Neutral border color */
+}
+
+.dark {
+    --navbar-background: #1F1F1F;
+    /* Dark Mode Navbar Background */
+
+    --color-primary: #1DA1F2;
+    /* Primary Color */
+    --color-secondary: #FFFFFF;
+    /* Secondary Color for contrast */
+    --color-tertiary: #FFAD1F;
+    /* Tertiary Color */
+    --color-success: #28A745;
+    /* Success Color */
+    --color-warning: #FFC107;
+    /* Warning Color */
+    --color-critical: #DC3545;
+    /* Critical Color */
+    --color-info: #17A2B8;
+    /* Info Color */
+    --color-neutral-light: #343A40;
+    /* Dark Neutral Light Color */
+    --color-neutral-default: #6C757D;
+    /* Neutral Color */
+    --color-neutral-dark: #F8F9FA;
+    /* Light Neutral Dark Color */
+
+    --color-background: #1A1A1A;
+    /* Dark background color for the app */
+    --color-surface: #2A2A2A;
+    /* Dark surface background for cards and surfaces */
+
+    --text-primary: #FFFFFF;
+    /* White text for primary */
+    --text-secondary: #B0B0B0;
+    /* Light gray for secondary */
+    --text-tertiary: #AAB8C2;
+    /* Tertiary text color */
+    --text-success: #28A745;
+    /* Success text color */
+    --text-warning: #FFC107;
+    /* Warning text color */
+    --text-critical: #DC3545;
+    /* Critical text color */
+    --text-info: #17A2B8;
+    /* Info text color */
+    --text-neutral-light: #F8F9FA;
+    /* Light neutral text color */
+    --text-neutral-default: #6C757D;
+    /* Default neutral text color */
+    --text-neutral-dark: #343A40;
+    /* Dark neutral text color */
+
+    /* Border Colors */
+    --border-success: #28A745;
+    /* Success border color */
+    --border-warning: #FFC107;
+    /* Warning border color */
+    --border-critical: #DC3545;
+    /* Critical border color */
+    --border-info: #17A2B8;
+    /* Info border color */
+    --border-neutral: #6C757D;
+    /* Neutral border color */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    color: var(--text-primary);
+}
+
+body {
+    background-color: var(--color-background);
 }

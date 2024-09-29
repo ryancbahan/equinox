@@ -1,16 +1,16 @@
-<table class="min-w-full table-auto border-collapse border border-gray-300 bg-surface <%= additional_classes %>">
+<table class="min-w-full table-auto border-collapse border border-neutral-default bg-surface <%= additional_classes %>">
   <thead>
-    <tr class="bg-gray-200">
+    <tr class="bg-neutral-light">
       <% headers.each do |header| %>
-        <th class="border border-gray-300 px-4 py-2 text-left"><%= header %></th>
+        <th class="border border-neutral-default px-4 py-2 text-left"><%= header %></th>
       <% end %>
     </tr>
   </thead>
   <tbody>
     <% rows.each do |row| %>
-      <tr class="hover:bg-gray-100">
+      <tr class="hover:bg-neutral-light">
         <% row.each do |cell| %>
-          <td class="border border-gray-300 px-4 py-2"><%= cell %></td>
+          <td class="border border-neutral-default px-4 py-2"><%= cell %></td>
         <% end %>
       </tr>
     <% end %>

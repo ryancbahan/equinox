@@ -2,10 +2,15 @@
   <!-- Hidden field that will be populated with the selected date -->
   <input type="hidden" name="<%= input_name %>" value="<%= selected_value %>" data-datepicker-target="input">
   <!-- The visible text field that will trigger the datepicker -->
-  <input type="text" class="border border-gray-300 p-2 rounded-md w-full focus:outline-none focus:ring focus:ring-blue-300 cursor-pointer"
-         value="<%= selected_value %>" placeholder="Select date" readonly data-action="click->datepicker#toggleCalendar" data-datepicker-target="input">
+  <input type="text" 
+         class="border border-gray-300 p-2 rounded-md w-full bg-surface text-neutral-default focus:outline-none focus:ring focus:ring-primary cursor-pointer" 
+         value="<%= selected_value %>" 
+         placeholder="Select date" 
+         readonly 
+         data-action="click->datepicker#toggleCalendar" 
+  data-datepicker-target="input">
   <!-- Calendar -->
-  <div class="absolute bg-white border border-gray-300 shadow-lg mt-2 p-4 rounded-md z-50 hidden w-64" data-datepicker-target="calendar">
+  <div class="absolute bg-surface border border-gray-300 shadow-lg mt-2 p-4 rounded-md z-50 hidden w-64" data-datepicker-target="calendar">
     <div class="flex justify-between items-center mb-4">
       <button class="text-gray-500 hover:text-black transition duration-200" data-action="click->datepicker#prevMonth">&lt;</button>
       <span class="font-semibold text-gray-800" data-datepicker-target="currentMonth">September 2024</span>

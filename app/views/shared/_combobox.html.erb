@@ -2,7 +2,7 @@
   <!-- Input field that triggers the combobox -->
   <input 
     type="text" 
-    class="border border-gray-300 p-2 rounded-md w-full focus:outline-none focus:ring focus:ring-blue-300"
+    class="border border-neutral-default bg-surface p-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-primary" 
     placeholder="Search..." 
     data-combobox-target="input"
     data-action="input->combobox#filter keydown->combobox#handleKeydown focus->combobox#showList"
@@ -11,14 +11,14 @@
   aria-expanded="false">
   <!-- Dropdown list of options -->
   <ul 
-    class="absolute bg-white border border-gray-300 shadow-lg mt-1 w-full hidden max-h-60 overflow-y-auto rounded-md z-10"
+    class="absolute bg-surface border border-neutral-default shadow-lg mt-1 w-full hidden max-h-60 overflow-y-auto rounded-md z-10"
     data-combobox-target="list"
     id="combobox-list"
     role="listbox">
-    <!-- Example options -->
+    <!-- Dynamic options -->
     <% options.each do |option| %>
       <li 
-        class="p-2 cursor-pointer hover:bg-blue-200"
+        class="p-2 cursor-pointer hover:bg-neutral-default hover:text-white"
         role="option" 
         tabindex="-1"
         data-combobox-target="option"

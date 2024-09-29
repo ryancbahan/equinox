@@ -4,11 +4,11 @@
     id="<%= id %>" 
     name="<%= name %>" 
     value="<%= value %>" 
-    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+    class="h-4 w-4 text-primary border-gray-300 focus:ring focus:ring-primary"
     <% if checked %> checked <% end %> 
   />
   <% if label.present? %>
-    <label for="<%= id %>" class="ml-2 block text-sm font-medium text-gray-700">
+    <label for="<%= id %>" class="ml-2 block text-sm font-medium text-neutral-default">
       <%= label %>
     </label>
   <% end %>

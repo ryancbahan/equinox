@@ -1,7 +1,7 @@
 <% if list_type == 'ul' %>
-  <ul class="border-collapse border border-gray-300 w-full bg-surface">
+  <ul class="border-collapse border border-neutral-default w-full bg-surface rounded-md shadow-sm">
     <% items.each do |item| %>
-      <li class="flex border border-gray-300 py-2 px-4 justify-between items-center hover:bg-gray-100">
+      <li class="flex border-b border-neutral-default py-2 px-4 justify-between items-center hover:bg-neutral-light">
         <% item.each do |cell| %>
           <span class="flex-1 text-left px-2"><%= cell %></span>
         <% end %>
@@ -9,9 +9,9 @@
     <% end %>
   </ul>
 <% elsif list_type == 'ol' %>
-  <ol class="border-collapse border border-gray-300 w-full bg-surface">
+  <ol class="border-collapse border border-neutral-default w-full bg-surface rounded-md shadow-sm">
     <% items.each do |item| %>
-      <li class="flex border border-gray-300 py-2 px-4 justify-between items-center hover:bg-gray-100">
+      <li class="flex border-b border-neutral-default py-2 px-4 justify-between items-center hover:bg-neutral-light">
         <% item.each do |cell| %>
           <span class="flex-1 text-left px-2"><%= cell %></span>
         <% end %>

@@ -4,10 +4,10 @@
   <h3 class="text-lg font-semibold mt-4">Basic Tooltip</h3>
   <div data-controller="tooltip">
     <div class="relative inline-block">
-      <button data-action="mouseover->tooltip#show mouseout->tooltip#hide" class="bg-blue-500 text-white px-4 py-2 rounded">
+      <button data-action="mouseover->tooltip#show mouseout->tooltip#hide" class="bg-primary text-white px-4 py-2 rounded">
         Hover over me
       </button>
-      <div data-tooltip-target="tooltip" class="hidden absolute z-10 bg-gray-700 text-white text-sm p-2 rounded mt-1">
+      <div data-tooltip-target="tooltip" class="hidden absolute z-10 bg-surface text-neutral-dark text-sm p-2 rounded mt-1">
         This is a basic tooltip!
       </div>
     </div>
@@ -16,10 +16,10 @@
   <h3 class="text-lg font-semibold mt-4">Tooltip with Delay</h3>
   <div data-controller="tooltip">
     <div class="relative inline-block">
-      <button data-action="mouseover->tooltip#show mouseout->tooltip#hide" class="bg-blue-500 text-white px-4 py-2 rounded">
+      <button data-action="mouseover->tooltip#show mouseout->tooltip#hide" class="bg-primary text-white px-4 py-2 rounded">
         Hover for delay
       </button>
-      <div data-tooltip-target="tooltip" class="hidden absolute z-10 bg-green-500 text-white text-sm p-2 rounded mt-1">
+      <div data-tooltip-target="tooltip" class="hidden absolute z-10 bg-success text-white text-sm p-2 rounded mt-1">
         Tooltip will show after a delay!
       </div>
     </div>
@@ -28,10 +28,10 @@
   <h3 class="text-lg font-semibold mt-4">Tooltip with Custom Position</h3>
   <div data-controller="tooltip">
     <div class="relative inline-block">
-      <button data-action="mouseover->tooltip#show mouseout->tooltip#hide" class="bg-blue-500 text-white px-4 py-2 rounded">
+      <button data-action="mouseover->tooltip#show mouseout->tooltip#hide" class="bg-primary text-white px-4 py-2 rounded">
         Custom Position
       </button>
-      <div data-tooltip-target="tooltip" class="hidden absolute right-0 z-10 bg-purple-500 text-white text-sm p-2 rounded mt-1">
+      <div data-tooltip-target="tooltip" class="hidden absolute right-0 z-10 bg-info text-white text-sm p-2 rounded mt-1">
         This tooltip is positioned differently!
       </div>
     </div>
