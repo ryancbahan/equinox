@@ -36,5 +36,6 @@ Rails.application.routes.draw do
   get 'components/page', to: 'components#page'
   get 'components/radio_button', to: 'components#radio_button'
   get 'components/button', to: 'components#button'
+  get 'components/form', to: 'components#form'
 
 end

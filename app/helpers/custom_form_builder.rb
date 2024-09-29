@@ -18,6 +18,13 @@ class CustomFormBuilder < ActionView::Helpers::FormBuilder
     }
   end
 
+  def submit(value = nil, options = {})
+  @template.render partial: 'shared/button', locals: {
+    text: value || 'Submit',
+    additional_classes: "bg-indigo-500 text-white"
+  }
+end
+
   def datepicker_field(method, options = {})
   @template.render partial: "shared/datepicker", locals: { 
     input_name: "#{object_name}[#{method}]",

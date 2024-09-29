@@ -70,10 +70,14 @@ class ComponentsController < ApplicationController
 
   def page
   end
-  
+
   def button
   end
 
   def radio_button
+  end
+
+  def form
+
   end
 end

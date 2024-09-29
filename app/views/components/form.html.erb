@@ -1,0 +1,20 @@
+<%= render "shared/page", title: "Form Component" do %>
+  <h2 class="text-xl font-semibold mb-4">Form Examples</h2>
+  <%= form_with url: "/submit_form", method: :post, builder: CustomFormBuilder do |form| %>
+    <!-- Input Fields -->
+    <h3 class="text-lg font-semibold mt-4">Input Fields</h3>
+    <%= form.text_field :username, label: "Username" %>
+    <%= form.email_field :email, label: "Email" %>
+    <%= form.datepicker_field :birthdate %>
+    <!-- Checkbox -->
+    <h3 class="text-lg font-semibold mt-4">Checkbox</h3>
+    <%= form.check_box :terms, label: "I agree to the terms" %>
+    <!-- Radio Buttons -->
+    <h3 class="text-lg font-semibold mt-4">Radio Buttons</h3>
+    <%= form.radio_button :option, "1", label: "Option 1" %>
+    <%= form.radio_button :option, "2", label: "Option 2" %>
+    <!-- Submit Button -->
+    <h3 class="text-lg font-semibold mt-4">Submit</h3>
+    <%= form.submit "Submit" %>
+  <% end %>
+<% end %>
