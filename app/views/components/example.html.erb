@@ -1,10 +1,28 @@
 <!-- app/views/components/example.html.erb -->
-<h1 class="text-2xl font-bold mb-4">Component Examples</h1>
-<h2 class="text-xl font-semibold mb-2">Badge Examples</h2>
-<!-- Default badge -->
-<%= render partial: "shared/badge", locals: { text: "Default Badge", description: nil } %>
-<h2 class="text-xl font-semibold mt-4 mb-2">Card Examples</h2>
-<!-- Card with badge -->
-<%= render partial: "shared/card", locals: { title: "Card Title", description: "This card contains a badge component.", badge_text: "Featured" } %>
-<!-- Card without badge -->
-<%= render partial: "shared/card", locals: { title: "Another Card", description: "This card does not have a badge.", badge_text: nil } %>
+<h1 class="text-3xl font-bold mb-6 text-center">Component Examples</h1>
+<div class="flex flex-col space-y-6 max-w-4xl mx-auto">
+  <div>
+    <h2 class="text-xl font-semibold mb-2">Badge Examples</h2>
+    <div class="flex space-x-4">
+      <%= render partial: "shared/badge", locals: { text: "Default Badge" } %>
+      <%= render partial: "shared/badge", locals: { text: "Success Badge" } %>
+      <%= render partial: "shared/badge", locals: { text: "Warning Badge" } %>
+    </div>
+  </div>
+  <div>
+    <h2 class="text-xl font-semibold mb-2">Card Examples</h2>
+    <div class="space-y-4">
+      <%= render partial: "shared/card", locals: { title: "Card Title", description: "This card contains a badge component.", badge_text: "Featured" } %>
+      <%= render partial: "shared/card", locals: { title: "Another Card", description: "This card does not have a badge.", badge_text: nil } %>
+    </div>
+  </div>
+  <div>
+    <h2 class="text-xl font-semibold mb-2">Select Examples</h2>
+    <%= render partial: "shared/select", locals: { label: "Choose an Option", options: ["Option 1", "Option 2", "Option 3"] } %>
+  </div>
+  <div>
+    <h2 class="text-xl font-semibold mb-2">Banner Examples</h2>
+    <%= render partial: "shared/banner", locals: { message: "Welcome to Equinox! This is your banner message.", dismissible: true } %>
+    <%= render partial: "shared/banner", locals: { message: "This is a static banner.", dismissible: false } %>
+  </div>
+</div>
