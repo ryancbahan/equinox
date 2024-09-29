@@ -1,10 +1,18 @@
+<% toast_classes = {
+  success: "bg-success text-white",
+  warning: "bg-warning text-white",
+  critical: "bg-critical text-white",
+  info: "bg-info text-white",
+  neutral: "bg-neutral-default text-neutral-dark",
+} %>
 <div data-controller="toast">
   <!-- Button to trigger toast -->
-  <button class="bg-green-500 text-white px-4 py-2 rounded" data-action="toast#show">
+  <button class="bg-primary text-white px-4 py-2 rounded" data-action="toast#show">
     <%= button_text %>
   </button>
   <!-- Toast -->
-  <div data-toast-target="toast" class="hidden fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm rounded-lg py-3 px-6 shadow-lg z-50">
+  <div data-toast-target="toast" class="hidden fixed bottom-4 left-1/2 transform -translate-x-1/2 <%= toast_classes[status] || toast_classes[:neutral] %> text-sm rounded-lg py-3 px-6 shadow-lg z-50">
     <%= message %>
+    <button data-action="click->toast#close" class="ml-2 bg-red-500 text-white px-2 py-1 rounded">Close</button>
   </div>
 </div>

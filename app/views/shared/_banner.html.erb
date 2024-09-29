@@ -1,6 +1,13 @@
-<div class="bg-blue-600 text-white px-4 py-3 rounded-md flex items-center justify-between">
+<% status_classes = {
+  success: "bg-success text-white",
+  warning: "bg-warning text-white",
+  critical: "bg-critical text-white",
+  info: "bg-info text-white",
+  neutral: "bg-neutral-default text-neutral-dark"
+} %>
+<div class="<%= status_classes[status] || status_classes[:neutral] %> px-4 py-3 rounded-md flex items-center justify-between">
   <div class="flex items-center">
-    <svg class="h-6 w-6 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg class="h-6 w-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m0 4h.01M12 6h.01M19 9l-7 7-7-7"></path>
     </svg>
     <p class="font-medium"><%= message %></p>

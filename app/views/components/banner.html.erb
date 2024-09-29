@@ -2,11 +2,17 @@
   <h2 class="text-xl font-semibold mb-4">Banner Examples</h2>
   <!-- Static Banner Example -->
   <h3 class="text-lg font-semibold mt-4">Static Banner</h3>
-  <%= render partial: "shared/banner", locals: { message: "This is a static banner.", dismissible: false } %>
+  <%= render partial: "shared/banner", locals: { message: "This is a static banner.", dismissible: false, status: :neutral } %>
   <!-- Dismissible Banner Example -->
   <h3 class="text-lg font-semibold mt-4">Dismissible Banner</h3>
-  <%= render partial: "shared/banner", locals: { message: "Welcome to Equinox! This is your banner message.", dismissible: true } %>
-  <!-- Custom Styled Banner Example -->
-  <h3 class="text-lg font-semibold mt-4">Custom Styled Banner</h3>
-  <%= render partial: "shared/banner", locals: { message: "This banner has custom styling!", dismissible: false, additional_classes: "bg-blue-500 text-white" } %>
+  <%= render partial: "shared/banner", locals: { message: "Welcome to Equinox! This is your banner message.", dismissible: true, status: :info } %>
+  <!-- Success Banner Example -->
+  <h3 class="text-lg font-semibold mt-4">Success Banner</h3>
+  <%= render partial: "shared/banner", locals: { message: "Your action was successful!", dismissible: true, status: :success } %>
+  <!-- Warning Banner Example -->
+  <h3 class="text-lg font-semibold mt-4">Warning Banner</h3>
+  <%= render partial: "shared/banner", locals: { message: "Please check your input!", dismissible: true, status: :warning } %>
+  <!-- Critical Banner Example -->
+  <h3 class="text-lg font-semibold mt-4">Critical Banner</h3>
+  <%= render partial: "shared/banner", locals: { message: "An error occurred!", dismissible: true, status: :critical } %>
 <% end %>

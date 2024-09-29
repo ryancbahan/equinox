@@ -1,1 +1,13 @@
-<%= button_tag text, class: "px-4 py-2 rounded #{additional_classes}", disabled: disabled %>
+<% button_classes = {
+  primary: "bg-primary text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-300",
+  secondary: "border border-secondary text-secondary bg-surface hover:bg-gray-100 focus:ring-2 focus:ring-gray-300",
+  destructive: "bg-critical text-white hover:bg-critical-dark focus:ring-2 focus:ring-critical",
+  disabled: "bg-gray-300 text-gray-500 cursor-not-allowed",
+} %>
+<% status = local_assigns.fetch(:status, :primary) %>
+<% disabled = local_assigns.fetch(:disabled, false) %>
+<% additional_classes = local_assigns.fetch(:additional_classes, '') %>
+<%= button_tag local_assigns[:text], 
+    class: "#{button_classes[status] || button_classes[:primary]} px-4 py-2 rounded #{additional_classes}", 
+    disabled: disabled 
+%>
