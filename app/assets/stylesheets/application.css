@@ -108,9 +108,9 @@
     /* Info text color */
     --text-neutral-light: #F8F9FA;
     /* Light neutral text color */
-    --text-neutral-default: #6C757D;
+    --text-neutral-default: #F8F9FA;
     /* Default neutral text color */
-    --text-neutral-dark: #343A40;
+    --text-neutral-dark: #F8F9FA;
     /* Dark neutral text color */
 
     /* Border Colors */
@@ -133,10 +133,46 @@ h4,
 h5,
 h6,
 p,
+div,
 span {
     color: var(--text-primary);
 }
 
 body {
     background-color: var(--color-background);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-neutral-light);
+    /* Track color */
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-neutral-default);
+    /* Scrollbar color */
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+    /* Color on hover */
+}
+
+/* For dark mode */
+.dark ::-webkit-scrollbar-track {
+    background: var(--color-neutral-dark);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: var(--color-neutral-light);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
 }

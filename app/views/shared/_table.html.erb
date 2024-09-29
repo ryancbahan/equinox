@@ -2,7 +2,7 @@
   <thead>
     <tr class="bg-neutral-light">
       <% headers.each do |header| %>
-        <th class="border border-neutral-default px-4 py-2 text-left"><%= header %></th>
+        <th class="border border-neutral-default px-4 py-2 text-left text-primary"><%= header %></th>
       <% end %>
     </tr>
   </thead>
@@ -10,7 +10,7 @@
     <% rows.each do |row| %>
       <tr class="hover:bg-neutral-light">
         <% row.each do |cell| %>
-          <td class="border border-neutral-default px-4 py-2"><%= cell %></td>
+          <td class="border border-neutral-default px-4 py-2 text-primary"><%= cell %></td>
         <% end %>
       </tr>
     <% end %>
