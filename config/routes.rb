@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get 'components/select', to: 'components#select'
   get 'components/banner', to: 'components#banner'
   get 'components/tabs', to: 'components#tabs'
+  get 'components/typography', to: 'components#typography'
 
   # Component routes
   get 'components/avatar', to: 'components#avatar'
