@@ -1,8 +1,13 @@
 <%= render "shared/page", title: "Card Component" do %>
+  <h2>Card with title and content</h2>
   <%= render 'shared/card', title: 'My Title', content: 'My content' %>
+  <h2>Card with content</h2>
+  <%= render 'shared/card', content: 'My content' %>
+  <h2>Card with no title and custom block content</h2>
   <%= render 'shared/card', title: 'My Title' do %>
     <p>This is my custom content in a block.</p>
   <% end %>
+  <h2>Card with title and custom block content</h2>
   <%= render 'shared/card' do %>
     <p>This is my custom content in a block.</p>
   <% end %>
