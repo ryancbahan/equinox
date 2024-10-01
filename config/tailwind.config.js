@@ -1,5 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
+const N = 0.25; // Define your baseline number N here (for example, 4px or 8px)
+
 module.exports = {
   content: [
     './public/*.html',
@@ -7,7 +9,6 @@ module.exports = {
     './app/javascript/**/*.js',
     './app/views/**/*.{erb,haml,html,slim}',
     './app/assets/stylesheets/**/*.css'
-
   ],
   theme: {
     extend: {
@@ -55,6 +56,17 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
+      spacing: {
+        '3xs': `${0.25 * N}rem`, // 0.25N
+        'xxs': `${0.5 * N}rem`,   // 0.5N
+        'xs': `${1 * N}rem`,     // N
+        'sm': `${1.5 * N}rem`,   // 1.5N
+        'md': `${2 * N}rem`,     // 2N
+        'lg': `${3 * N}rem`,     // 3N
+        'xl': `${4 * N}rem`,    // 4N
+        '2xl': `${5 * N}rem`,    // 5N
+        '3xl': `${7.5 * N}rem`,  // 7.5N
       },
     },
   },
