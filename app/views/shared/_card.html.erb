@@ -1,4 +1,12 @@
 <div class="border border-neutral-light shadow-sm rounded-lg p-lg bg-surface my-xl">
-  <p class="text-lg font-semibold"><%= title %></p>
-  <p><%= description %></p>
+  <% if local_assigns[:title].present? %>
+    <p class="text-lg font-semibold"><%= title %></p>
+  <% end %>
+  <div class="text-neutral-default">
+    <% if local_assigns[:content].present? %>
+      <%= content %>
+    <% elsif block_given? %>
+      <%= yield %>
+    <% end %>
+  </div>
 </div>
