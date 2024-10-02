@@ -1,9 +1,9 @@
 <div data-controller="accordion">
-  <% items.each do |item| %>
-    <div class="border-b bg-surface hover:bg-hoverBg-surface rounded-lg overflow-hidden">
+  <% items.each_with_index do |item, index| %>
+    <div class="<%= index == 0 ? 'rounded-t-lg' : '' %> <%= index == items.length - 1 ? 'rounded-b-lg' : '' %> bg-surface overflow-hidden border-t border-neutral-default">
       <button 
         type="button" 
-        class="flex justify-between items-center w-full p-4 text-left bg-neutral-light hover:bg-neutral-default focus:outline-none focus:ring-2 focus:ring-primary rounded-t-lg" 
+        class="flex justify-between items-center w-full p-4 text-left bg-neutral-light hover:bg-neutral-default focus:outline-none focus:ring-2 focus:ring-primary" 
         data-action="click->accordion#toggle"
         aria-expanded="false" 
         aria-controls="accordion-item-<%= item[:id] %>"
@@ -11,7 +11,7 @@
         <span class="text-neutral-default"><%= item[:title] %></span>
         <span class="ml-2 text-xs" aria-hidden="true">▼</span>
       </button>
-      <div id="accordion-item-<%= item[:id] %>" class="hidden p-4 bg-surface rounded-b-lg" data-accordion-target="content">
+      <div id="accordion-item-<%= item[:id] %>" class="hidden p-4 bg-surface border-t border-neutral-default" data-accordion-target="content">
         <p class="text-neutral-default"><%= item[:content] %></p>
       </div>
     </div>
