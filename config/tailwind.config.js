@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 const N = 0.25; // Define your baseline number N here (for example, 4px or 8px)
 
@@ -21,15 +21,35 @@ module.exports = {
         warning: 'var(--color-warning)',
         critical: 'var(--color-critical)',
         info: 'var(--color-info)',
-        neutral: {
-          light: 'var(--color-neutral-light)',
-          DEFAULT: 'var(--color-neutral-default)',
-          dark: 'var(--color-neutral-dark)',
-        },
+        neutral: 'var(--color-neutral)',
         background: 'var(--color-background)',
         surface: 'var(--color-surface)',
+        // Hover Background Colors
+        hoverBg: {
+          primary: 'var(--hover-bg-primary)',
+          secondary: 'var(--hover-bg-secondary)',
+          tertiary: 'var(--hover-bg-tertiary)',
+          success: 'var(--hover-bg-success)',
+          warning: 'var(--hover-bg-warning)',
+          critical: 'var(--hover-bg-critical)',
+          info: 'var(--hover-bg-info)',
+          neutral: 'var(--hover-bg-neutral)',
+        },
+        // Hover Text Colors
+        hoverText: {
+          primary: 'var(--hover-text-primary)',
+          secondary: 'var(--hover-text-secondary)',
+          tertiary: 'var(--hover-text-tertiary)',
+          success: 'var(--hover-text-success)',
+          warning: 'var(--hover-text-warning)',
+          critical: 'var(--hover-text-critical)',
+          info: 'var(--hover-text-info)',
+          neutral: 'var(--hover-text-neutral)',
+        }
       },
       textColor: {
+        default: 'var(--text-default)',
+        "button-default": 'var(--text-button-default)',
         primary: 'var(--text-primary)',
         secondary: 'var(--text-secondary)',
         tertiary: 'var(--text-tertiary)',
@@ -37,22 +57,14 @@ module.exports = {
         warning: 'var(--text-warning)',
         critical: 'var(--text-critical)',
         info: 'var(--text-info)',
-        neutral: {
-          light: 'var(--text-neutral-light)',
-          DEFAULT: 'var(--text-neutral-default)',
-          dark: 'var(--text-neutral-dark)',
-        },
+        neutral: 'var(--text-neutral)',
       },
       borderColor: {
         success: 'var(--color-success)',
         warning: 'var(--color-warning)',
         critical: 'var(--color-critical)',
         info: 'var(--color-info)',
-        neutral: {
-          DEFAULT: 'var(--color-neutral-default)',
-          light: 'var(--color-neutral-light)',
-          dark: 'var(--color-neutral-dark)',
-        },
+        neutral: 'var(--color-neutral)',
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
@@ -77,7 +89,8 @@ module.exports = {
   ],
   variants: {
     extend: {
-      backgroundColor: ['checked', 'focus'],
+      backgroundColor: ['checked', 'focus', 'hover'],
+      textColor: ['hover', 'focus'],
       borderColor: ['checked', 'focus'],
       ring: ['focus'],
     }

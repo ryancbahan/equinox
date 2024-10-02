@@ -1,8 +1,8 @@
 <% button_classes = {
-  primary: "bg-primary text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-300",
-  secondary: "border border-secondary text-secondary bg-surface hover:bg-gray-100 focus:ring-2 focus:ring-gray-300",
-  destructive: "bg-critical text-white hover:bg-critical-dark focus:ring-2 focus:ring-critical",
-  disabled: "bg-gray-300 text-gray-500 cursor-not-allowed",
+  primary: "bg-primary text-button-default hover:bg-hoverBg-primary hover:text-hoverText-primary focus:ring-2 focus:ring-primary",
+  secondary: "border border-primary text-primary bg-surface hover:bg-hoverBg-primary hover:text-hoverText-primary focus:ring-2 focus:ring-primary",
+  destructive: "bg-critical text-button-default hover:bg-hoverBg-critical hover:text-hoverText-critical focus:ring-2 focus:ring-critical",
+  disabled: "bg-gray-300 text-button-default cursor-not-allowed",
 } %>
 <% status = local_assigns.fetch(:status, :primary) %>
 <% disabled = local_assigns.fetch(:disabled, false) %>

@@ -1,130 +1,95 @@
 :root {
     --navbar-background: #14171A;
-    /* Light Mode Navbar Background */
-
     --color-primary: #1DA1F2;
-    /* Primary Color */
     --color-secondary: #14171A;
-    /* Secondary Color */
     --color-tertiary: #FFAD1F;
-    /* Tertiary Color */
     --color-success: #28A745;
-    /* Success Color */
     --color-warning: #FFC107;
-    /* Warning Color */
     --color-critical: #DC3545;
-    /* Critical Color */
     --color-info: #17A2B8;
-    /* Info Color */
-    --color-neutral-light: #F8F9FA;
-    /* Light Neutral Color */
-    --color-neutral-default: #6C757D;
-    /* Default Neutral Color */
-    --color-neutral-dark: #343A40;
-    /* Dark Neutral Color */
-
+    --color-neutral: #6C757D;
+    /* Updated neutral color */
     --color-background: #F0F4F8;
-    /* Light background color for the app */
     --color-surface: #FFFFFF;
-    /* White background for cards and surfaces */
 
-    --text-primary: #14171A;
-    /* Primary text color */
-    --text-secondary: #657786;
-    /* Secondary text color */
+    --text-default: #14171A;
+    --text-button-default: #FFF;
+    --text-primary: #1DA1F2;
+    --text-btn-secondary: #1DA1F2;
+    --text-secondary: #FFF;
     --text-tertiary: #AAB8C2;
-    /* Tertiary text color */
     --text-success: #28A745;
-    /* Success text color */
     --text-warning: #FFC107;
-    /* Warning text color */
     --text-critical: #DC3545;
-    /* Critical text color */
     --text-info: #17A2B8;
-    /* Info text color */
-    --text-neutral-light: #F8F9FA;
-    /* Light neutral text color */
-    --text-neutral-default: #6C757D;
-    /* Default neutral text color */
-    --text-neutral-dark: #343A40;
-    /* Dark neutral text color */
+    --text-neutral: #6C757D;
 
-    /* Border Colors */
-    --border-success: #28A745;
-    /* Success border color */
-    --border-warning: #FFC107;
-    /* Warning border color */
-    --border-critical: #DC3545;
-    /* Critical border color */
-    --border-info: #17A2B8;
-    /* Info border color */
-    --border-neutral: #6C757D;
-    /* Neutral border color */
+    /* Hover Background Colors */
+    --hover-bg-primary: #0d8dd7;
+    --hover-bg-secondary: #101010;
+    --hover-bg-tertiary: #e69513;
+    --hover-bg-success: #218838;
+    --hover-bg-warning: #e0a800;
+    --hover-bg-critical: #c82333;
+    --hover-bg-info: #138496;
+    --hover-bg-neutral: #5c636a;
+
+    /* Hover Text Colors */
+    --hover-text-primary: #FFF;
+    --hover-text-secondary: #0d0d0d;
+    --hover-text-tertiary: #cc8d10;
+    --hover-text-success: #FFF;
+    --hover-text-warning: #FFF;
+    --hover-text-critical: #FFF;
+    --hover-text-info: #FFF;
+    --hover-text-neutral: #565e64;
 }
+
+
 
 .dark {
     --navbar-background: #1F1F1F;
-    /* Dark Mode Navbar Background */
-
     --color-primary: #1DA1F2;
-    /* Primary Color */
     --color-secondary: #FFFFFF;
-    /* Secondary Color for contrast */
     --color-tertiary: #FFAD1F;
-    /* Tertiary Color */
     --color-success: #28A745;
-    /* Success Color */
     --color-warning: #FFC107;
-    /* Warning Color */
     --color-critical: #DC3545;
-    /* Critical Color */
     --color-info: #17A2B8;
-    /* Info Color */
-    --color-neutral-light: #343A40;
-    /* Dark Neutral Light Color */
-    --color-neutral-default: #6C757D;
-    /* Neutral Color */
-    --color-neutral-dark: #F8F9FA;
-    /* Light Neutral Dark Color */
-
+    --color-neutral: #6C757D;
     --color-background: #1A1A1A;
-    /* Dark background color for the app */
     --color-surface: #2A2A2A;
-    /* Dark surface background for cards and surfaces */
 
     --text-primary: #FFFFFF;
-    /* White text for primary */
     --text-secondary: #B0B0B0;
-    /* Light gray for secondary */
     --text-tertiary: #AAB8C2;
-    /* Tertiary text color */
     --text-success: #28A745;
-    /* Success text color */
     --text-warning: #FFC107;
-    /* Warning text color */
     --text-critical: #DC3545;
-    /* Critical text color */
     --text-info: #17A2B8;
-    /* Info text color */
-    --text-neutral-light: #F8F9FA;
-    /* Light neutral text color */
-    --text-neutral-default: #F8F9FA;
-    /* Default neutral text color */
-    --text-neutral-dark: #F8F9FA;
-    /* Dark neutral text color */
+    --text-neutral: #F8F9FA;
 
-    /* Border Colors */
-    --border-success: #28A745;
-    /* Success border color */
-    --border-warning: #FFC107;
-    /* Warning border color */
-    --border-critical: #DC3545;
-    /* Critical border color */
-    --border-info: #17A2B8;
-    /* Info border color */
-    --border-neutral: #6C757D;
-    /* Neutral border color */
+    /* Hover Background Colors */
+    --hover-bg-primary: #1a8ac1;
+    --hover-bg-secondary: #e1e1e1;
+    --hover-bg-tertiary: #d98c12;
+    --hover-bg-success: #218838;
+    --hover-bg-warning: #e0a800;
+    --hover-bg-critical: #b21f2d;
+    --hover-bg-info: #117a8b;
+    --hover-bg-neutral: #5e646a;
+
+    /* Hover Text Colors */
+    --hover-text-primary: #0a6ca6;
+    --hover-text-secondary: #d3d3d3;
+    --hover-text-tertiary: #cc8d10;
+    --hover-text-success: #1d7e34;
+    --hover-text-warning: #cf9700;
+    --hover-text-critical: #9f232b;
+    --hover-text-info: #0e6e7d;
+    --hover-text-neutral: #c8c8c8;
 }
+
 
 h1,
 h2,
@@ -135,7 +100,7 @@ h6,
 p,
 div,
 span {
-    color: var(--text-primary);
+    color: var(--text-default);
 }
 
 body {
