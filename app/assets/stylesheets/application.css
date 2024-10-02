@@ -23,6 +23,7 @@
     --text-critical: #DC3545;
     --text-info: #17A2B8;
     --text-neutral: #6C757D;
+    --hover-bg-surface: #e5e5e5;
 
     /* Hover Background Colors */
     --hover-bg-primary: #0d8dd7;
@@ -79,6 +80,8 @@
     --hover-bg-critical: #b21f2d;
     --hover-bg-info: #117a8b;
     --hover-bg-neutral: #5e646a;
+    --hover-bg-surface: #3a3a3a;
+
 
     /* Hover Text Colors */
     --hover-text-primary: #0a6ca6;

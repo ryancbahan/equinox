@@ -26,6 +26,7 @@ module.exports = {
         surface: 'var(--color-surface)',
         // Hover Background Colors
         hoverBg: {
+          surface: 'var(--hover-bg-surface)',
           primary: 'var(--hover-bg-primary)',
           secondary: 'var(--hover-bg-secondary)',
           tertiary: 'var(--hover-bg-tertiary)',
