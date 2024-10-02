@@ -1,9 +1,9 @@
 <% status_classes = {
-  success: "shadow-md bg-success hover:bg-hoverBg-success hover:text-hoverText-success",
-  warning: "shadow-md bg-warning hover:bg-hoverBg-warning hover:text-hoverText-warning",
-  critical: "shadow-md bg-critical hover:bg-hoverBg-critical hover:text-hoverText-critical",
-  info: "shadow-md bg-info hover:bg-hoverBg-info hover:text-hoverText-info",
-  neutral: "shadow-md bg-neutral hover:bg-hoverBg-neutral"
+  success: "shadow-sm bg-success hover:bg-hoverBg-success hover:text-hoverText-success",
+  warning: "shadow-sm bg-warning hover:bg-hoverBg-warning hover:text-hoverText-warning",
+  critical: "shadow-sm bg-critical hover:bg-hoverBg-critical hover:text-hoverText-critical",
+  info: "shadow-sm bg-info hover:bg-hoverBg-info hover:text-hoverText-info",
+  neutral: "shadow-sm bg-neutral hover:bg-hoverBg-neutral"
 } %>
 <div class="<%= status_classes[status] || status_classes[:neutral] %> cursor-default px-4 py-3 rounded-md flex items-center justify-between transition-colors duration-200">
   <div class="flex items-center">
