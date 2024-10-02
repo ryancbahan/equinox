@@ -60,6 +60,7 @@
     --color-background: #1A1A1A;
     --color-surface: #2A2A2A;
 
+    --text-default: #FFF;
     --text-primary: #FFFFFF;
     --text-secondary: #B0B0B0;
     --text-tertiary: #AAB8C2;
@@ -88,19 +89,6 @@
     --hover-text-critical: #9f232b;
     --hover-text-info: #0e6e7d;
     --hover-text-neutral: #c8c8c8;
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-div,
-span {
-    color: var(--text-default);
 }
 
 body {

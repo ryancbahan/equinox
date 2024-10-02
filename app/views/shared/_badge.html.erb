@@ -1,10 +1,10 @@
 <% status_classes = {
-  success: "bg-success text-white border border-success",
-  warning: "bg-warning text-white border border-warning",
-  critical: "bg-critical text-white border border-critical",
-  info: "bg-info text-white border border-info",
-  neutral: "bg-neutral-default text-neutral border border-neutral-default"
+  success: "bg-success text-white border border-success hover:bg-hoverBg-success hover:text-hoverText-success",
+  warning: "bg-warning text-white border border-warning hover:bg-hoverBg-warning hover:text-hoverText-warning",
+  critical: "bg-critical text-white border border-critical hover:bg-hoverBg-critical hover:text-hoverText-critical",
+  info: "bg-info text-white border border-info hover:bg-hoverBg-info hover:text-hoverText-info",
+  neutral: "bg-neutral text-white border border-neutral hover:bg-hoverBg-neutral"
 } %>
-<span class="max-h-8 inline-flex items-center px-3 py-1 rounded-lg text-sm font-medium <%= status_classes[status] || status_classes[:neutral] %> leading-none">
+<span class="cursor-default max-h-8 inline-flex items-center px-3 py-1 rounded-lg text-sm font-medium shadow-md <%= status_classes[status] || status_classes[:neutral] %> leading-none transition-colors duration-200">
   <%= text %>
 </span>
