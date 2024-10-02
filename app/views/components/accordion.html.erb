@@ -1,11 +1,22 @@
 <%= render "shared/page", title: "Accordion Component" do %>
   <h2>Accordion Examples</h2>
+  <!-- Basic Accordion Example -->
   <h3>Basic Accordion</h3>
-  <%= render partial: "shared/accordion", locals: { items: [
-    { id: 1, title: "Section 1", content: "This is the content for section 1." },
-    { id: 2, title: "Section 2", content: "This is the content for section 2." },
-    { id: 3, title: "Section 3", content: "This is the content for section 3." }
-  ] } %>
-  <h3>Advanced Accordion Example</h3>
-  <p>This example shows advanced usage or nested accordions.</p>
+  <%= render partial: "shared/accordion", locals: { 
+    items: [
+      { id: 1, title: "Section 1", content: "This is the content for section 1." },
+      { id: 2, title: "Section 2", content: "This is the content for section 2." },
+      { id: 3, title: "Section 3", content: "This is the content for section 3." }
+    ] 
+  } %>
+  <!-- Accordion with Single-Open Functionality -->
+  <h3>Single Open Accordion</h3>
+  <%= render partial: "shared/accordion", locals: { 
+    items: [
+      { id: 4, title: "First Item", content: "Content for the first item." },
+      { id: 5, title: "Second Item", content: "Content for the second item." },
+      { id: 6, title: "Third Item", content: "Content for the third item." }
+    ],
+    single_open: true
+  } %>
 <% end %>
